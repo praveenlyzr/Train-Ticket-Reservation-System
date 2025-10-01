@@ -49,6 +49,7 @@
 		<p class='menu'> Add Trains </p>
 	</div>
 	<form class="tab" action="adminaddtrain" method="post">
+		<input type="hidden" name="csrf_token" value="${csrf_token}">
 		<br /> Train Number:<input type="text" name="trainno"><br />
 		<br /> Train Name: <input type="text" name="trainname"><br />
 		<br /> From Station: <input type="text" name="fromstation"><br />

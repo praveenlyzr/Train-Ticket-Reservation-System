@@ -54,6 +54,7 @@
 		<p class="menu">Search Trains</p>
 	</div>
 	<form action="adminsearchtrain" class="tab red" method="post">
+		<input type="hidden" name="csrf_token" value="${csrf_token}">
 		<br /> TrainNumber: <input type="text" name="trainnumber"><br />
 		<br /> <input type="submit" value=" SEARCH TRAIN "><br />
 	</form>
