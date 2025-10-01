@@ -20,6 +20,7 @@
 	
 	<div class="tab green">Admin Login</div>
 	<form action="adminlogin" class="tab brown" method="post">
+		<input type="hidden" name="csrf_token" value="${csrf_token}">
 		<br />UserName: <input type="text" name="uname"
 			placeholder="Enter Your EmailId"><br />
 		<br /> Password: <input type="password" name="pword"><br />
