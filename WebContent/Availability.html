@@ -61,6 +61,7 @@
 		<p class="menu">Seat Availability</p>
 	</div>
 	<form action="useravail" class="tab red" method="post">
+		<input type="hidden" name="csrf_token" value="${CSRF_TOKEN}">
 		TrainNumber: <input type="text" name="trainno"><br /> <br />
 		<input type="submit" value=" SEARCH TRAIN AVAILABILITY"><br />
 	</form>
